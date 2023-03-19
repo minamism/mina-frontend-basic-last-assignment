@@ -5,7 +5,6 @@
   color: $white;
   background-color: $black;
   text-decoration: none;
-  font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
   transition: all 0.2s ease;
   display: flex;
@@ -15,20 +14,19 @@
 
   //default
   width: 200px;
-  padding: 17.5px 16px;
+  height: 55px;
 
   &:hover {
     color: $white;
     background-color: $orange_bistre;
   }
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     width: 150px;
-    padding: 17.5px 16px;
   }
 
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: $breakpoint-md) {
     width: 180px;
-    padding: 12.5px 16px;
+    height: 45px;
   }
 }
