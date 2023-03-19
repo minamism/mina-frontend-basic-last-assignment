@@ -11,10 +11,12 @@
   //default
   font-size: $fontsize-xl;
   line-height: 54px;
+  margin-bottom: 10px;
 
   @media (max-width: $breakpoint-lg) {
     font-size: $fontsize-l;
     line-height: 30px;
+    margin-bottom: 6px;
   }
 }
 
