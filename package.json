@@ -2,7 +2,10 @@
   "name": "frontend-basic-last-assignment-2021",
   "version": "1.0.0",
   "main": "src/page/index.html",
-  "repository": "https://github.com/shinonome-inc/frontend-basic-last-assignment-2021.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinonome-inc/frontend-basic-last-assignment-2021.git"
+  },
   "author": "PG-frontend-teachers",
   "license": "MIT",
   "scripts": {
@@ -28,5 +31,14 @@
     "sass": "^1.35.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0"
-  }
+  },
+  "dependencies": {
+    "npm": "^9.6.2"
+  },
+  "bugs": {
+    "url": "https://github.com/shinonome-inc/frontend-basic-last-assignment-2021/issues"
+  },
+  "homepage": "https://github.com/shinonome-inc/frontend-basic-last-assignment-2021#readme",
+  "keywords": [],
+  "description": ""
 }
