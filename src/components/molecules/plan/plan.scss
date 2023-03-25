@@ -17,8 +17,8 @@
     }
   }
 
-  @media (max-width: $breakpoint-sm) {
-    margin-bottom: 10px;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
   }
 
   .plan-title {
@@ -53,7 +53,9 @@
   }
 
   .plan-text {
-    border: solid 1px $gray_gainsboro;
+    border-left: solid 1px $gray_gainsboro;
+    border-right: solid 1px $gray_gainsboro;
+    border-bottom: solid 1px $gray_gainsboro;
     padding: 20px 0;
     margin: 0;
     font-size: $fontsize-s;
