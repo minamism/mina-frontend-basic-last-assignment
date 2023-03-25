@@ -1,0 +1,65 @@
+@use "../../variables" as *;
+
+.card {
+  padding: 0;
+  background-color: $white_smoke;
+
+  &:hover .card-img {
+    transform: scale(1.2);
+  }
+  @media (max-width: $breakpoint-sm) {
+    &:hover .card-img {
+      transform: none;
+    }
+  }
+
+  .card-img-all {
+    position: relative;
+    overflow: hidden;
+    .card-img {
+      transition: transform 0.5s ease;
+      border-radius: 0;
+    }
+
+    .card-img-overlay {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+
+      .triangle {
+        position: relative;
+        margin: 0;
+        width: 0px;
+        height: 0px;
+        border-top: 75px solid $white;
+        border-right: 75px solid transparent;
+        border-left: 75px solid $white;
+        border-bottom: 75px solid transparent;
+      }
+      .card-title {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        color: $orange_bistre;
+        font-size: $fontsize-l;
+        font-weight: 700;
+        line-height: 29px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.card-body {
+  padding: 0;
+  .card-text {
+    margin: 32px 32px 30px 32px;
+    font-size: $fontsize-s;
+    line-height: 33px;
+  }
+  .card-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+}
