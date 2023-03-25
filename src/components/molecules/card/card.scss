@@ -2,13 +2,17 @@
 
 .card {
   padding: 0;
+  background-color: $white_smoke;
 
   .card-img-all {
     position: relative;
     overflow: hidden;
+    .card-img {
+      transition: transform 0.5s ease;
+    }
 
     &:hover .card-img {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
 
     .card-img-overlay {
@@ -21,10 +25,10 @@
         margin: 0;
         width: 0px;
         height: 0px;
-        border-top: 150px solid $white;
-        border-right: 150px solid transparent;
-        border-left: 150px solid $white;
-        border-bottom: 150px solid transparent;
+        border-top: 75px solid $white;
+        border-right: 75px solid transparent;
+        border-left: 75px solid $white;
+        border-bottom: 75px solid transparent;
       }
       .card-title {
         position: absolute;
@@ -37,12 +41,20 @@
         margin: 0;
       }
     }
+
+    @media (max-width: $breakpoint-md) {
+      &:hover .card-img {
+        transform: none;
+      }
+    }
   }
 
   .card-body {
     padding: 0;
     .card-text {
       margin: 32px 32px 30px 32px;
+      font-size: $fontsize-s;
+      line-height: 33px;
     }
     .card-btn {
       display: flex;
