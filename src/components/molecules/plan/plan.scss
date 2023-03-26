@@ -1,0 +1,65 @@
+@use "../../variables" as *;
+
+.plan {
+  text-align: center;
+  width: 100%;
+
+  &:nth-child(odd) {
+    .plan-title {
+      background-color: $orange_zorba;
+    }
+  }
+  &:nth-child(even) {
+    box-sizing: border-box;
+    border: solid 5px $orange_bistre;
+    .plan-title {
+      background-color: $orange_bistre;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
+
+  .plan-title {
+    color: $white;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: $fontsize-l;
+    margin: 0;
+  }
+
+  .plan-price {
+    border: solid 1px $gray_gainsboro;
+    background-color: $gray_desertStorm;
+    padding: 24px 0;
+    .price {
+      color: $orange_bistre;
+      font-weight: bold;
+      font-size: $fontsize-l;
+      margin-bottom: 16px;
+      b {
+        color: $orange_bistre;
+
+        font-size: $fontsize-xxl;
+        vertical-align: bottom;
+      }
+    }
+    .price-text {
+      margin: 0;
+      font-size: $fontsize-s;
+      color: $black;
+    }
+  }
+
+  .plan-text {
+    border-left: solid 1px $gray_gainsboro;
+    border-right: solid 1px $gray_gainsboro;
+    border-bottom: solid 1px $gray_gainsboro;
+    padding: 20px 0;
+    margin: 0;
+    font-size: $fontsize-s;
+    color: $black;
+    line-height: 20px;
+  }
+}
