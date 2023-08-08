@@ -1,0 +1,93 @@
+@use "../../variables" as *;
+
+header {
+  background-color: $black;
+  display: inline-block;
+  height: 60px;
+  width: 100%;
+
+  @media (min-width: $breakpoint-xl) {
+    background-color: $gray_nobel;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img {
+    height: 24px;
+    margin: 18px 30px;
+  }
+}
+
+ul {
+  list-style: none;
+  background-color: $black;
+  color: $white;
+}
+
+li {
+  font-size: $fontsize-xs;
+  height: 60px;
+  line-height: 60px;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.header {
+  display: flex;
+}
+
+.humberger-btn {
+  margin-left: auto;
+}
+
+.concept {
+  display: flex;
+}
+
+.card {
+  border: none;
+}
+
+#first-ul {
+  @media (min-width: $breakpoint-xl) {
+    background-color: $gray_nobel;
+    display: flex;
+  }
+
+  li {
+    @media (min-width: $breakpoint-xl) {
+      margin-right: 30px;
+    }
+  }
+}
+
+#dropdownMenuButton1 {
+  background-color: $gray_nobel;
+  border: none;
+  height: 60px;
+  padding: 0px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.dropdown-menu {
+  background-color: $black;
+  border: none;
+  border-radius: 0;
+  padding: 0px;
+  transform: translate(-15px, 60px) !important;
+
+  li {
+    padding: 0px 18px;
+    width: 190px;
+  }
+}
