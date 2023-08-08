@@ -38,110 +38,111 @@ header {
       color: $white;
     }
   }
-}
 
-.header {
-  display: flex;
-}
-
-.header-img {
-  height: 20px;
-  margin: 20px 16px;
-
-  @media (min-width: $breakpoint-xl) {
-    height: 24px;
-    margin: 33px 30px;
-  }
-}
-
-.humberger-btn {
-  margin-left: auto;
-}
-
-#humberger {
-  img {
-    height: 15px;
-    margin: 22.5px 16px;
-  }
-}
-
-.concept {
-  display: flex;
-
-  img {
-    width: 26px;
-    height: 26px;
-    margin: 12px 16px;
-  }
-}
-
-.card {
-  border: none;
-  border-radius: 0;
-
-  @media (min-width: $breakpoint-xl) {
-    background-color: $white;
-  }
-}
-
-#main-ul {
-  padding-left: 16px;
-  
-  @media (min-width: $breakpoint-xl) {
-    background-color: $black_50;
-
+  .header {
     display: flex;
-    margin: 0px;
-    padding: 0px;
-  }
-}
 
-.main-li {
-  @media (min-width: $breakpoint-xl) {
-    margin-right: 30px;
-    transition: 0.2s ease;
-    &:hover {
-      color: $gray_nobel;
+    .header-img {
+      height: 20px;
+      margin: 20px 16px;
+
+      @media (min-width: $breakpoint-xl) {
+        height: 24px;
+        margin: 33px 30px;
+      }
+    }
+
+    .humberger-btn {
+      margin-left: auto;
+    }
+
+    #humberger {
+      img {
+        height: 15px;
+        margin: 22.5px 16px;
+      }
     }
   }
-}
 
-#collapseConcept ul {
-  padding-left: 12px;
-}
+  .card {
+    border: none;
+    border-radius: 0;
 
-.dropdown {
-  background-color: $white;
-}
+    @media (min-width: $breakpoint-xl) {
+      background-color: $white;
+    }
 
-#dropdownMenuButton {
-  background-color: $black_50;
-  border: none;
-  height: 90px;
-  padding: 0px;
-}
+    #main-ul {
+      padding-left: 16px;
 
-.dropdown-menu {
-  background-color: $black;
-  border: none;
-  border-radius: 0;
-  padding: 0px;
-  transform: translate(-15px, 90px) !important;
+      @media (min-width: $breakpoint-xl) {
+        background-color: $black_50;
 
-  li {
-    width: 220px;
-    height: 56px;
-    line-height: 56px;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+      }
 
-    a {
-      padding: 0px 18px;
-      display: block;
-      height: 100%;
-      width: 100%;
-      transition: 0.2s ease;
+      .main-li {
+        @media (min-width: $breakpoint-xl) {
+          margin-right: 30px;
+          transition: 0.2s ease;
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+      }
 
-      &:hover {
-        background-color: $orange_bistre;
+      .concept {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          width: 26px;
+          height: 26px;
+          margin: 12px 16px;
+        }
+      }
+
+      #collapseConcept ul {
+        padding-left: 12px;
+      }
+
+      .dropdown {
+        background-color: $white;
+
+        #dropdownMenuButton {
+          background-color: $black_50;
+          border: none;
+          height: 90px;
+          padding: 0px;
+        }
+
+        .dropdown-menu {
+          background-color: $black;
+          border: none;
+          border-radius: 0;
+          padding: 0px;
+          transform: translate(-15px, 90px) !important;
+
+          li {
+            width: 220px;
+            height: 56px;
+            line-height: 56px;
+
+            a {
+              padding: 0px 18px;
+              display: block;
+              height: 100%;
+              width: 100%;
+              transition: 0.2s ease;
+
+              &:hover {
+                background-color: $orange_bistre;
+              }
+            }
+          }
+        }
       }
     }
   }
