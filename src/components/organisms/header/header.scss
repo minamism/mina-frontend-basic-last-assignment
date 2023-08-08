@@ -85,6 +85,8 @@ header {
 }
 
 #main-ul {
+  padding-left: 16px;
+  
   @media (min-width: $breakpoint-xl) {
     background-color: $black_50;
 
