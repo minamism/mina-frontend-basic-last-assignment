@@ -10,32 +10,33 @@ header {
     background-color: $gray_nobel;
     display: flex;
     justify-content: space-between;
+    height: 90px;
   }
 
-  img {
-    height: 24px;
-    margin: 18px 30px;
-  }
-}
-
-ul {
-  list-style: none;
-  background-color: $black;
-  color: $white;
-}
-
-li {
-  font-size: $fontsize-xs;
-  height: 60px;
-  line-height: 60px;
-}
-
-a {
-  color: $white;
-  text-decoration: none;
-
-  &:hover {
+  ul {
+    list-style: none;
+    background-color: $black;
     color: $white;
+  }
+
+  li {
+    font-size: $fontsize-xs;
+    height: 50px;
+    line-height: 50px;
+
+    @media (min-width: $breakpoint-xl) {
+      height: 90px;
+      line-height: 90px;
+    }
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: $fontsize-s;
+
+    &:hover {
+      color: $white;
+    }
   }
 }
 
@@ -43,40 +44,69 @@ a {
   display: flex;
 }
 
+.header-img {
+  height: 20px;
+  margin: 20px 16px;
+
+  @media (min-width: $breakpoint-xl) {
+    height: 24px;
+    margin: 33px 30px;
+  }
+}
+
 .humberger-btn {
   margin-left: auto;
 }
 
+#humberger {
+  img {
+    height: 15px;
+    margin: 22.5px 16px;
+  }
+}
+
 .concept {
   display: flex;
+
+  img {
+    width: 26px;
+    height: 26px;
+    margin: 12px 16px;
+  }
 }
 
 .card {
   border: none;
 }
 
-#first-ul {
+#main-ul {
   @media (min-width: $breakpoint-xl) {
     background-color: $gray_nobel;
     display: flex;
+    margin: 0px;
+    padding: 0px;
   }
+}
 
-  li {
-    @media (min-width: $breakpoint-xl) {
-      margin-right: 30px;
+.main-li {
+  @media (min-width: $breakpoint-xl) {
+    margin-right: 30px;
+    transition: transform 0.2s ease;
+    &:hover {
+      opacity: 0.6;
     }
   }
 }
 
-#dropdownMenuButton1 {
+#collapseConcept ul {
+  padding-left: 12px;
+}
+
+#dropdownMenuButton {
   background-color: $gray_nobel;
   border: none;
-  height: 60px;
+  height: 50px;
   padding: 0px;
-
-  &:hover {
-    opacity: 0.6;
-  }
 }
 
 .dropdown-menu {
@@ -84,10 +114,12 @@ a {
   border: none;
   border-radius: 0;
   padding: 0px;
-  transform: translate(-15px, 60px) !important;
+  transform: translate(-15px, 90px) !important;
 
   li {
     padding: 0px 18px;
-    width: 190px;
+    width: 220px;
+    height: 56px;
+    line-height: 56px;
   }
 }
