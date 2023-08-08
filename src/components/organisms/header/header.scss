@@ -7,7 +7,7 @@ header {
   width: 100%;
 
   @media (min-width: $breakpoint-xl) {
-    background-color: $gray_nobel;
+    background-color: $black_50;
     display: flex;
     justify-content: space-between;
     height: 90px;
@@ -77,11 +77,17 @@ header {
 
 .card {
   border: none;
+  border-radius: 0;
+
+  @media (min-width: $breakpoint-xl) {
+    background-color: $white;
+  }
 }
 
 #main-ul {
   @media (min-width: $breakpoint-xl) {
-    background-color: $gray_nobel;
+    background-color: $black_50;
+
     display: flex;
     margin: 0px;
     padding: 0px;
@@ -91,9 +97,9 @@ header {
 .main-li {
   @media (min-width: $breakpoint-xl) {
     margin-right: 30px;
-    transition: transform 0.2s ease;
+    transition: 0.2s ease;
     &:hover {
-      opacity: 0.6;
+      color: $gray_nobel;
     }
   }
 }
@@ -102,10 +108,14 @@ header {
   padding-left: 12px;
 }
 
+.dropdown {
+  background-color: $white;
+}
+
 #dropdownMenuButton {
-  background-color: $gray_nobel;
+  background-color: $black_50;
   border: none;
-  height: 50px;
+  height: 90px;
   padding: 0px;
 }
 
@@ -117,9 +127,20 @@ header {
   transform: translate(-15px, 90px) !important;
 
   li {
-    padding: 0px 18px;
     width: 220px;
     height: 56px;
     line-height: 56px;
+
+    a {
+      padding: 0px 18px;
+      display: block;
+      height: 100%;
+      width: 100%;
+      transition: 0.2s ease;
+
+      &:hover {
+        background-color: $orange_bistre;
+      }
+    }
   }
 }
