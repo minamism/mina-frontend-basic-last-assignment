@@ -39,7 +39,7 @@ header {
     }
   }
 
-  .header {
+  .header-inner {
     display: flex;
 
     .header-img {
@@ -99,7 +99,6 @@ header {
 
         img {
           width: 26px;
-          height: 26px;
           margin: 12px 16px;
         }
       }
