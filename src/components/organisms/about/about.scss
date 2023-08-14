@@ -1,0 +1,35 @@
+@use "../../variables" as *;
+
+.about {
+  padding: 100px 0px;
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 40px 0px;
+  }
+
+  .about-image {
+    width: 100%;
+    margin: 0;
+
+    img {
+      padding: 0;
+    }
+  }
+
+  .message {
+    background-color: $white_smoke;
+    padding: 52px 20px;
+
+    @media (max-width: $breakpoint-lg) {
+      padding: 32px 20px;
+    }
+
+    .message-title {
+      color: $orange_bistre;
+    }
+
+    .message-text {
+      color: $black;
+    }
+  }
+}
