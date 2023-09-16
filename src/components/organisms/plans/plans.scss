@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+
+.plans {
+  margin-top: 56px;
+  margin-bottom: 100px;
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 35px;
+  }
+
+  .message {
+    padding: 0px 20px 32px 20px;
+
+
+    .message-title {
+      color: $orange_bistre;
+    }
+
+    .message-text {
+      color: $black;
+      margin-bottom: 0;
+    }
+  }
+
+  .plan-list {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      gap: 0px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+}
