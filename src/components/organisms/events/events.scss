@@ -52,6 +52,14 @@
             text-overflow: ellipsis;
             margin-bottom: 8px;
             width: 100%;
+
+            @media (min-width: $breakpoint-lg) {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+              overflow: hidden;
+              white-space: wrap;
+            }
           }
 
           .posted-at {
