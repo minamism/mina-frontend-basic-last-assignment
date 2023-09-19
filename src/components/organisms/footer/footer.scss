@@ -14,10 +14,11 @@
       width: 150px;
     }
 
-    p {
+    address {
       font-size: $fontsize-s;
       padding-bottom: 20px;
       margin: 0;
+      line-height: 28px;
     }
 
     .icon-list {
@@ -44,25 +45,41 @@
     border-bottom: solid $gray_nobel 1px;
     display: flex;
     justify-content: center;
-    gap: 8px;
 
     @media (max-width: $breakpoint-md) {
       flex-wrap: wrap;
+      gap: 8px;
     }
 
     .nav {
       color: $black;
       text-decoration: none;
       align-items: center;
+      transition: 0.2s ease;
+      padding: 0 8px;
+
+      &:hover {
+        color: $orange_bistre;
+      }
 
       @media (max-width: $breakpoint-md) {
         width: 49.2%;
+        padding: 0;
+      }
+    }
+    
+    .b-r {
+      border-right: solid $black 1px;
+      @media (max-width: $breakpoint-md) {
+        border: none;
       }
     }
 
-    p {
-      align-items: center;
-      margin: 0;
+    .b-l {
+      border-left: solid $black 1px;
+      @media (max-width: $breakpoint-md) {
+        border: none;
+      }
     }
   }
 
@@ -75,7 +92,7 @@
     justify-content: center;
     align-items: center;
 
-    p {
+    small {
       margin: 0;
     }
   }
