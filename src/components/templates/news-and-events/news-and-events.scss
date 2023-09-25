@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+
+.news-and-events {
+  padding: 56px 0;
+  background-color: $white_smoke;
+
+  .container {
+
+    @media (min-width: $breakpoint-lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .news {
+    margin-bottom: 35px;
+
+    @media (min-width: $breakpoint-lg) {
+      width: 47%;
+    }
+  }
+
+  .events {
+    @media (min-width: $breakpoint-lg) {
+      width: 47%;
+    }
+  }
+  
+}
