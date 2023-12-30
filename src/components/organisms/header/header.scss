@@ -67,6 +67,7 @@ header {
   .card {
     border: none;
     border-radius: 0;
+    z-index: 1;
 
     @media (min-width: $breakpoint-xl) {
       background-color: $white;
@@ -74,6 +75,7 @@ header {
 
     #main-ul {
       padding-left: 16px;
+      margin-bottom: 0;
 
       @media (min-width: $breakpoint-xl) {
         background-color: $black_50;
