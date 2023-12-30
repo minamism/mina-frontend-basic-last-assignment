@@ -5,6 +5,7 @@ header {
   display: inline-block;
   height: 60px;
   width: 100%;
+  position: absolute;
 
   @media (min-width: $breakpoint-xl) {
     background-color: $black_50;
