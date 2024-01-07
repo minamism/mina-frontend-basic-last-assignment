@@ -13,7 +13,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 90px;
-    position: relative;
   }
 
   ul {
@@ -67,22 +66,17 @@ header {
     }
   }
 
-  .card {
+  .cardh {
     border: none;
     border-radius: 0;
     z-index: 1;
-
-    @media (min-width: $breakpoint-xl) {
-      background-color: $white;
-    }
 
     #main-ul {
       padding-left: 16px;
       margin-bottom: 0;
 
       @media (min-width: $breakpoint-xl) {
-        background-color: $black_50;
-
+        background-color: inherit;
         display: flex;
         margin: 0px;
         padding: 0px;
@@ -113,10 +107,10 @@ header {
       }
 
       .dropdown {
-        background-color: $white;
+        background-color: inherit;
 
         #dropdownMenuButton {
-          background-color: $black_50;
+          background-color: inherit;
           border: none;
           height: 90px;
           padding: 0px;
